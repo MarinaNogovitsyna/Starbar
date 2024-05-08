@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./fonts/Gilroy-Bold.ttf) format(truetype);
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: Gilroy;
+    src: url(./fonts/Gilroy-Black.ttf) format(truetype);
+    font-weight: 900;
+  }
+  
+  @font-face {
+    font-family: Gilroy;
+    src: url(./fonts/Gilroy-Medium.ttf) format(truetype);
+    font-weight: 500;
+  }
+
+html {
+    font-family: Gilroy;
+    color: #3D3830;
+}
+
+.black-average {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.medium {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.black-big {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+header {
+    width: 100%;
+    background-color: #FFC5AE;
+    padding: 10px 0;
+}
+
+header h1 {
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    width: 136px;
+    margin: auto;
+}
+
+.main-description {
+    position: relative;
+}
+
+.main-description__text {
+    width: 92%;
+    padding: 190px 0;
+    background-color: #FFC5AE;
+    border-radius: 230px 0 230px 0;
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-description__text span {
+    display: block;
+    width: 34%;
+    margin-left: 120px;
+}
+
+.main-description__img {
+    position: absolute;
+    top: -138px;
+    right: 0;
+}
+
+.starbar-description {
+    position: relative;
+    height: max-content;
+}
+
+.starbar-description__text {
+    position: absolute;
+    top: 958px;
+    z-index: -10;
+    width: 92%;
+    padding: 293px 0;
+    background-color: #CACF93;
+    border-radius: 0 340px 0 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.starbar-description__text h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 110px;
+    font-size: 40px;
+}
+
+.starbar-description__text span {
+    font-size: 25px;
+    display: block;
+    margin-left: 110px;
+    width: 50%;
+}
+
+.aromas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aromas__green {
+    display: flex;
+    flex-direction: column;
+    gap: 396px;
+}
+
+.aromas__grass, .aromas__berry, .aromas__flower {
+    position: relative;
+}
+
+.aromas__grass__text {
+    width: 888px;
+    background-color: #CACF93;
+    padding: 180px 40px 210px 497px;
+    border-radius: 240px 0 240px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aromas__grass__text h5, .aromas__grass__text span {
+    display: block;
+    margin-right: auto;
+    width: 287px;
+}
+
+.aromas__grass__img {
+    position: absolute;
+    width: 661px;
+    top: -115px;
+}
+
+.aromas__berry__text {
+    width: 888px;
+    background-color: #CACF93;
+    padding: 111px 0 330px 387px;
+    border-radius: 0 240px 0 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aromas__berry__text h5, .aromas__berry__text span {
+    display: block;
+    width: 190px;
+}
+
+.aromas__berry__img {
+    position: absolute;
+    top: 100px;
+}
+
+.aromas__description {
+    width: 392px;
+}
+
+.aromas__flower {
+    margin-top: 184px;
+    margin-left: -200px;
+}
+
+.aromas__flower__text {
+    width: 758px;
+    background-color: #FFC5AE;
+    padding: 50px 0 330px 0;
+    border-radius: 280px 280px 0 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.aromas__flower__text h5, .aromas__flower__text span {
+    display: block;
+    width: 220px;
+}
+
+.aromas__flower__img {
+    position: absolute;
+    top: 162px;
+    right: 0;
+}
