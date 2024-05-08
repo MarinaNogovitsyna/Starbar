@@ -42,6 +42,20 @@ html {
     font-weight: 900;
 }
 
+.text-spacing {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.block {
+    display: block;
+}
+
 header {
     width: 100%;
     background-color: #FFC5AE;
@@ -50,8 +64,6 @@ header {
 
 header h1 {
     color: white;
-    text-transform: uppercase;
-    display: block;
     width: 136px;
     margin: auto;
 }
@@ -66,13 +78,9 @@ header h1 {
     background-color: #FFC5AE;
     border-radius: 230px 0 230px 0;
     margin-top: 220px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .main-description__text span {
-    display: block;
     width: 34%;
     margin-left: 120px;
 }
@@ -96,13 +104,9 @@ header h1 {
     padding: 293px 0;
     background-color: #CACF93;
     border-radius: 0 340px 0 340px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .starbar-description__text h2 {
-    text-transform: uppercase;
     font-weight: 600;
     margin-left: 110px;
     font-size: 40px;
@@ -110,7 +114,6 @@ header h1 {
 
 .starbar-description__text span {
     font-size: 25px;
-    display: block;
     margin-left: 110px;
     width: 50%;
 }
@@ -126,7 +129,7 @@ header h1 {
     gap: 396px;
 }
 
-.aromas__grass, .aromas__berry, .aromas__flower {
+.aromas__grass, .aromas__berry, .aromas__flower, .collection__elder, .collection__sage, .collection__raspberries {
     position: relative;
 }
 
@@ -135,13 +138,9 @@ header h1 {
     background-color: #CACF93;
     padding: 180px 40px 210px 497px;
     border-radius: 240px 0 240px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .aromas__grass__text h5, .aromas__grass__text span {
-    display: block;
     margin-right: auto;
     width: 287px;
 }
@@ -157,13 +156,9 @@ header h1 {
     background-color: #CACF93;
     padding: 111px 0 330px 387px;
     border-radius: 0 240px 0 240px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .aromas__berry__text h5, .aromas__berry__text span {
-    display: block;
     width: 190px;
 }
 
@@ -186,14 +181,10 @@ header h1 {
     background-color: #FFC5AE;
     padding: 50px 0 330px 0;
     border-radius: 280px 280px 0 280px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     align-items: center;
 }
 
 .aromas__flower__text h5, .aromas__flower__text span {
-    display: block;
     width: 220px;
 }
 
@@ -202,3 +193,62 @@ header h1 {
     top: 162px;
     right: 0;
 }
+
+.collection__title {
+    width: 243px;
+    margin: 250px 0 200px 75vw;
+}
+
+.collection__elder__text, .collection__sage__text, .collection__raspberries__text {
+    width: 1148px;
+}
+
+.collection__elder__text, .collection__raspberries__text {
+    background-color: #FFC5AE;
+    padding: 195px 0 195px 108px;
+}
+
+.collection__elder__text {
+    border-radius: 240px 0;
+}
+
+.collection__elder__img, .collection__raspberries__img {
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+.collection__elder__text span {
+    width: 570px;
+}
+
+.collection__sage__text {
+    background-color: #CACF93;
+    padding: 132px 132px 132px 0;
+    align-items: end;
+    margin-left: auto;
+    border-radius: 0 240px;
+    margin-top: 500px;
+}
+
+.collection__sage__text h5, .collection__sage__text span {
+    width: 497px;
+}
+
+.collection__sage__img {
+    position: absolute;
+    top: 0;
+}
+
+.collection__raspberries {
+    margin-top: 500px;
+}
+
+.collection__raspberries__text {
+    border-radius: 0 240px;
+}
+
+.collection__raspberries__text span {
+    width: 500px;
+}
+
