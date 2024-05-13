@@ -1,254 +1,416 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: Gilroy;
-    src: url(./fonts/Gilroy-Bold.ttf) format(truetype);
-    font-weight: 700;
-  }
+  font-family: Gilroy;
+  src: url(./fonts/Gilroy-Bold.ttf) format(truetype);
+  font-weight: 700;
+}
 
-  @font-face {
-    font-family: Gilroy;
-    src: url(./fonts/Gilroy-Black.ttf) format(truetype);
-    font-weight: 900;
-  }
-  
-  @font-face {
-    font-family: Gilroy;
-    src: url(./fonts/Gilroy-Medium.ttf) format(truetype);
-    font-weight: 500;
-  }
+@font-face {
+  font-family: Gilroy;
+  src: url(./fonts/Gilroy-Black.ttf) format(truetype);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(./fonts/Gilroy-Medium.ttf) format(truetype);
+  font-weight: 500;
+}
 
 html {
-    font-family: Gilroy;
-    color: #3D3830;
+  font-family: Gilroy;
+  color: #3d3830;
 }
 
 .black-average {
-    font-size: 32px;
-    font-weight: 900;
+  font-size: 32px;
+  font-weight: 900;
 }
 
 .medium {
-    font-size: 24px;
-    font-weight: 500;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .black-big {
-    font-size: 40px;
-    font-weight: 900;
+  font-size: 40px;
+  font-weight: 900;
 }
 
 .text-spacing {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .block {
-    display: block;
+  display: block;
 }
 
 header {
-    width: 100%;
-    background-color: #FFC5AE;
-    padding: 10px 0;
+  width: 100%;
+  background-color: #ffc5ae;
+  padding: 10px 0;
 }
 
 header h1 {
-    color: white;
-    width: 136px;
-    margin: auto;
+  color: white;
+  width: 136px;
+  margin: auto;
 }
 
 .main-description {
-    position: relative;
+  position: relative;
 }
 
 .main-description__text {
-    width: 92%;
-    padding: 190px 0;
-    background-color: #FFC5AE;
-    border-radius: 230px 0 230px 0;
-    margin-top: 220px;
+  width: 92%;
+  padding: 190px 0;
+  background-color: #ffc5ae;
+  border-radius: 230px 0 230px 0;
+  margin-top: 220px;
 }
 
 .main-description__text span {
-    width: 34%;
-    margin-left: 120px;
+  width: 34%;
+  margin-left: 120px;
 }
 
 .main-description__img {
-    position: absolute;
-    top: -138px;
-    right: 0;
+  position: absolute;
+  top: -138px;
+  right: 0;
 }
 
 .starbar-description {
-    position: relative;
-    height: max-content;
+  position: relative;
+  height: max-content;
 }
 
 .starbar-description__text {
-    position: absolute;
-    top: 958px;
-    z-index: -10;
-    width: 92%;
-    padding: 293px 0;
-    background-color: #CACF93;
-    border-radius: 0 340px 0 340px;
+  position: absolute;
+  top: 958px;
+  z-index: -10;
+  width: 92%;
+  padding: 293px 0;
+  background-color: #cacf93;
+  border-radius: 0 340px 0 340px;
+}
+
+.starbar-description__img {
+    margin-left: 100px;
 }
 
 .starbar-description__text h2 {
-    font-weight: 600;
-    margin-left: 110px;
-    font-size: 40px;
+  font-weight: 600;
+  margin-left: 110px;
+  font-size: 40px;
 }
 
 .starbar-description__text span {
-    font-size: 25px;
-    margin-left: 110px;
-    width: 50%;
+  font-size: 25px;
+  margin-left: 110px;
+  width: 50%;
 }
 
 .aromas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aromas__green {
+  display: flex;
+  flex-direction: column;
+  gap: 396px;
+}
+
+.aromas__grass,
+.aromas__berry,
+.aromas__flower,
+.collection__elder,
+.collection__sage,
+.collection__raspberries,
+.all-tastes,
+.new-items__grapefruit,
+.new-items__pear {
+  position: relative;
+}
+
+.aromas__grass__text {
+  width: 888px;
+  background-color: #cacf93;
+  padding: 180px 40px 210px 497px;
+  border-radius: 240px 0 240px 0;
+}
+
+.aromas__grass__text h5,
+.aromas__grass__text span {
+  margin-right: auto;
+  width: 287px;
+}
+
+.aromas__grass__img {
+  position: absolute;
+  width: 661px;
+  top: -115px;
+}
+
+.aromas__berry__text {
+  width: 888px;
+  background-color: #cacf93;
+  padding: 111px 0 330px 387px;
+  border-radius: 0 240px 0 240px;
+}
+
+.aromas__berry__text h5,
+.aromas__berry__text span {
+  width: 190px;
+}
+
+.aromas__berry__img {
+  position: absolute;
+  top: 100px;
+}
+
+.aromas__description {
+  width: 392px;
+}
+
+.aromas__flower {
+  margin-top: 184px;
+  margin-left: -200px;
+}
+
+.aromas__flower__text {
+  width: 758px;
+  background-color: #ffc5ae;
+  padding: 50px 0 330px 0;
+  border-radius: 280px 280px 0 280px;
+  align-items: center;
+}
+
+.aromas__flower__text h5,
+.aromas__flower__text span {
+  width: 220px;
+}
+
+.aromas__flower__img {
+  position: absolute;
+  top: 162px;
+  right: 0;
+}
+
+.collection__title {
+  width: 243px;
+  margin: 250px 0 200px 75vw;
+}
+
+.collection__elder__text,
+.collection__sage__text,
+.collection__raspberries__text {
+  width: 1148px;
+}
+
+.collection__elder__text,
+.collection__raspberries__text {
+  background-color: #ffc5ae;
+  padding: 195px 0 195px 108px;
+}
+
+.collection__elder__text {
+  border-radius: 240px 0;
+}
+
+.collection__elder__img,
+.collection__raspberries__img {
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+
+.collection__elder__text span {
+  width: 570px;
+}
+
+.collection__sage__text {
+  background-color: #cacf93;
+  padding: 132px 132px 132px 0;
+  align-items: end;
+  margin-left: auto;
+  border-radius: 0 240px;
+  margin-top: 500px;
+}
+
+.collection__sage__text h5,
+.collection__sage__text span {
+  width: 497px;
+}
+
+.collection__sage__img {
+  position: absolute;
+  top: 0;
+}
+
+.collection__raspberries {
+  margin-top: 500px;
+}
+
+.collection__raspberries__text {
+  border-radius: 0 240px;
+}
+
+.collection__raspberries__text span {
+  width: 500px;
+}
+
+.all-tastes {
+    margin-top: 900px;
+    height: 900px;
+}
+
+.all-tastes__text {
+    float: right;
+    width: 91%;
+    background-color: #CACF93;
+    padding: 431px 0 70px 70px;
+    border-radius: 300px 0 300px 0;
+}
+
+.all-tastes__text span {
+    width: 535px;
+}
+
+.all-tastes__img {
+    position: absolute;
+    top: -550px;
+    left: 0;
+    width: 100%;
+}
+
+.new-items__title-and-name {
+    display: flex;
+    align-items: center;
+    padding-left: 30%;
+    gap: 35%;
+}
+
+.new-items__title-and-name span, .new-items__title-and-name h4{
+    width: 150px;
+}
+
+.new-items__blueberry-and-name {
+    display: flex;
+    gap: 220px;
+}
+
+.new-items__blueberry {
+    width: 758px;
+    height: 607px;
+    background-color: #FFB79A;
+    border-radius: 300px 300px 300px 0;
+    position: relative;
+    margin-top: 50px;
+}
+
+.new-items__blueberry__img {
+    position: absolute;
+    top: -155px;
+}
+
+.new-items__blueberry-and-name span {
+    text-align: end;
+    width: 165px;
+    align-self: flex-end;
+    margin-bottom: 80px;
+}
+
+.new-items__grapefruit-and-name {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25%;
+    align-items: end;
+}
+
+.new-items__grapefruit__name:first-child {
+    width: 150px;
+}
+
+.new-items__grapefruit__name:last-child {
+    width: 280px;
+}
+
+.new-items__grapefruit {
+    width: 760px;
+    height: 620px;
+    background-color: #CACF93;
+    border-radius: 300px 300px 0 300px;
+    margin-bottom: 60px;
+}
+
+.new-items__grapefruit__img {
+    position: absolute;
+    top: -173px;
+    left: 177px;
+}
+
+.new-items__pear {
+    width: 760px;
+    height: 622px;
+    background-color: #FFB79A;
+    border-radius: 300px 300px 300px 0;
+    margin-top: 50px;
+    margin-bottom: 313px;
+}
+
+.new-items__pear__img {
+    position: absolute;
+    top: -180px;
+    left: 70px;
+}
+
+footer {
+    width: 100%;
+    background-color: #FFB79A;
+    padding: 46px 65px 100px 100px;
     display: flex;
     justify-content: space-between;
 }
 
-.aromas__green {
+.footer__logo {
+    font-weight: 900;
+    font-size: 48px;
+    color: white;
+    width: 200px;
+}
+
+.footer__nav-and-contacts {
     display: flex;
     flex-direction: column;
-    gap: 396px;
+    gap: 100px;
 }
 
-.aromas__grass, .aromas__berry, .aromas__flower, .collection__elder, .collection__sage, .collection__raspberries {
-    position: relative;
+.footer__nav {
+    display: flex;
+    gap: 60px;
 }
 
-.aromas__grass__text {
-    width: 888px;
-    background-color: #CACF93;
-    padding: 180px 40px 210px 497px;
-    border-radius: 240px 0 240px 0;
+.footer__nav a {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
 }
 
-.aromas__grass__text h5, .aromas__grass__text span {
-    margin-right: auto;
-    width: 287px;
+.footer__contacts {
+    display: flex;
+    gap: 100px;
 }
-
-.aromas__grass__img {
-    position: absolute;
-    width: 661px;
-    top: -115px;
-}
-
-.aromas__berry__text {
-    width: 888px;
-    background-color: #CACF93;
-    padding: 111px 0 330px 387px;
-    border-radius: 0 240px 0 240px;
-}
-
-.aromas__berry__text h5, .aromas__berry__text span {
-    width: 190px;
-}
-
-.aromas__berry__img {
-    position: absolute;
-    top: 100px;
-}
-
-.aromas__description {
-    width: 392px;
-}
-
-.aromas__flower {
-    margin-top: 184px;
-    margin-left: -200px;
-}
-
-.aromas__flower__text {
-    width: 758px;
-    background-color: #FFC5AE;
-    padding: 50px 0 330px 0;
-    border-radius: 280px 280px 0 280px;
-    align-items: center;
-}
-
-.aromas__flower__text h5, .aromas__flower__text span {
-    width: 220px;
-}
-
-.aromas__flower__img {
-    position: absolute;
-    top: 162px;
-    right: 0;
-}
-
-.collection__title {
-    width: 243px;
-    margin: 250px 0 200px 75vw;
-}
-
-.collection__elder__text, .collection__sage__text, .collection__raspberries__text {
-    width: 1148px;
-}
-
-.collection__elder__text, .collection__raspberries__text {
-    background-color: #FFC5AE;
-    padding: 195px 0 195px 108px;
-}
-
-.collection__elder__text {
-    border-radius: 240px 0;
-}
-
-.collection__elder__img, .collection__raspberries__img {
-    position: absolute;
-    top: -20px;
-    right: 0;
-}
-
-.collection__elder__text span {
-    width: 570px;
-}
-
-.collection__sage__text {
-    background-color: #CACF93;
-    padding: 132px 132px 132px 0;
-    align-items: end;
-    margin-left: auto;
-    border-radius: 0 240px;
-    margin-top: 500px;
-}
-
-.collection__sage__text h5, .collection__sage__text span {
-    width: 497px;
-}
-
-.collection__sage__img {
-    position: absolute;
-    top: 0;
-}
-
-.collection__raspberries {
-    margin-top: 500px;
-}
-
-.collection__raspberries__text {
-    border-radius: 0 240px;
-}
-
-.collection__raspberries__text span {
-    width: 500px;
-}
-
