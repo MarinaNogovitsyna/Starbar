@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Starbar Craft</title>
   </head>
   <body>
@@ -17,13 +18,14 @@
     </header>
 
     <div class="main-description">
-      <div class="main-description__text text-spacing">
+      <div class="main-description__text text-spacing" data-aos="zoom-in-right">
         <span class="medium block">
           Градус жары повышается с каждым днем и все больше времени хочется
-          проводить загородом со стаканчиком <br/>чего-то прохладненького...
+          проводить загородом со стаканчиком <br />чего-то прохладненького...
         </span>
         <span class="medium block">
-          Что же полезного<br/> и прохладного выпить летом?
+          Что же полезного<br />
+          и прохладного выпить летом?
         </span>
       </div>
       <img
@@ -39,7 +41,10 @@
         src="./img/pouring2.png"
         alt="Напиток наливается в стакан"
       />
-      <div class="starbar-description__text text-spacing">
+      <div
+        class="starbar-description__text text-spacing"
+        data-aos="zoom-in-left"
+      >
         <h2 class="uppercase">Starbar Craft</h2>
         <span class="block"
           >- это созданная по авторским рецептам коллекция лимонадов с
@@ -51,7 +56,10 @@
     <div class="aromas">
       <div class="aromas__green">
         <div class="aromas__grass">
-          <div class="aromas__grass__text text-spacing">
+          <div
+            class="aromas__grass__text text-spacing"
+            data-aos="zoom-out-right"
+          >
             <h5 class="black-big block">травяной</h5>
             <span class="medium block">
               (шалфей, можжевеловые ягоды, кардамон)
@@ -64,7 +72,10 @@
           />
         </div>
         <div class="aromas__berry">
-          <div class="aromas__berry__text text-spacing">
+          <div
+            class="aromas__berry__text text-spacing"
+            data-aos="zoom-out-left"
+          >
             <h5 class="black-big block">ягодный и пряный</h5>
             <span class="medium block"> (малина, имбирь и корица) </span>
           </div>
@@ -84,10 +95,14 @@
           </h3>
         </div>
         <div class="aromas__flower">
-          <div class="aromas__flower__text text-spacing">
+          <div
+            class="aromas__flower__text text-spacing"
+            data-aos="zoom-out-right"
+          >
             <h5 class="black-big block">цветочный и сладкий</h5>
             <span class="medium block">
-              (японская груша <br/> и белая хризантема)
+              (японская груша <br />
+              и белая хризантема)
             </span>
           </div>
           <img
@@ -105,7 +120,10 @@
       </div>
 
       <div class="collection__elder">
-        <div class="collection__elder__text text-spacing">
+        <div
+          class="collection__elder__text text-spacing"
+          data-aos="zoom-out-left"
+        >
           <h5 class="black-big uppercase">Цветы бузины</h5>
           <span class="medium block">
             Легкая кислинка и освежающий вкус идеально для уталения летней жажды
@@ -119,7 +137,10 @@
       </div>
 
       <div class="collection__sage">
-        <div class="collection__sage__text text-spacing">
+        <div
+          class="collection__sage__text text-spacing"
+          data-aos="zoom-out-right"
+        >
           <h5 class="black-big uppercase">
             Шалфей Можжевеловые ягоды Кардамон
           </h5>
@@ -135,7 +156,10 @@
       </div>
 
       <div class="collection__raspberries">
-        <div class="collection__raspberries__text text-spacing">
+        <div
+          class="collection__raspberries__text text-spacing"
+          data-aos="zoom-out-left"
+        >
           <h5 class="black-big uppercase">Малина имбирь и корица</h5>
           <span class="medium block">
             Сладкая малина и легкая горчинка имбиря объединяются в идеальный
@@ -151,17 +175,13 @@
     </div>
 
     <div class="all-tastes">
-      <div class="all-tastes__text">
+      <div class="all-tastes__text" data-aos="zoom-out-right">
         <span class="medium block">
           Лимонад - классический летний напиток, который известен своим
           освежающим вкусом и охлаждающим эффектом.
         </span>
-        <img
-          class="all-tastes__img"
-          src="./img/allTastes2.png"
-          alt="Все вкусы"
-        />
       </div>
+      <img class="all-tastes__img" src="./img/allTastes2.png" alt="Все вкусы" />
     </div>
 
     <div class="new-items" id="new-items">
@@ -171,7 +191,7 @@
       </div>
 
       <div class="new-items__blueberry-and-name">
-        <div class="new-items__blueberry">
+        <div class="new-items__blueberry" data-aos="zoom-out-left">
           <img
             class="new-items__blueberry__img"
             src="./img/blueberry.png"
@@ -183,10 +203,14 @@
 
       <div class="new-items__grapefruit-and-name">
         <div>
-          <span class="black-average block new-items__grapefruit__name">японская груша</span>
-          <span class="black-average block new-items__grapefruit__name">белая хризантема</span>
+          <span class="black-average block new-items__grapefruit__name"
+            >японская груша</span
+          >
+          <span class="black-average block new-items__grapefruit__name"
+            >белая хризантема</span
+          >
         </div>
-        <div class="new-items__grapefruit">
+        <div class="new-items__grapefruit" data-aos="zoom-out-right">
           <img
             class="new-items__grapefruit__img"
             src="./img/grapefruit.png"
@@ -195,26 +219,39 @@
         </div>
       </div>
 
-      <div class="new-items__pear">
-        <img class="new-items__pear__img" src="./img/pear.png" alt=" Вкус японская груша белая хризантема">
+      <div class="new-items__pear" data-aos="zoom-out-left">
+        <img
+          class="new-items__pear__img"
+          src="./img/pear.png"
+          alt=" Вкус японская груша белая хризантема"
+        />
       </div>
     </div>
 
     <div class="contacts" id="contacts">
-      <h4 class="black-average">Наши<br/> контакты</h4>
-      <div class="contacts__text">
-          <h5>Производство:</h5>
-          <span class="medium">141595, Московская обл., город <br/>Солнечногорск, д.Ложки; <br/>Тел: +7 (499) 189-37-37, <span class="border-bottom">fabrika@senegskaya.ru</span></span>
-          <h5>Продажи:</h5>
-          <span class="medium">123329, г.Москва, Кольская д.2, корп.4; <br/>Тел: +7 (499) 189-37-37, +7 (495) 786-22-33, <span class="border-bottom">office@senegskaya.ru</span></span>
+      <h4 class="black-average">
+        Наши<br />
+        контакты
+      </h4>
+      <div class="contacts__text" data-aos="zoom-out-right">
+        <h5>Производство:</h5>
+        <span class="medium"
+          >141595, Московская обл., город <br />Солнечногорск, д.Ложки;
+          <br />Тел: +7 (499) 189-37-37,
+          <span class="border-bottom">fabrika@senegskaya.ru</span></span
+        >
+        <h5>Продажи:</h5>
+        <span class="medium"
+          >123329, г.Москва, Кольская д.2, корп.4; <br />Тел: +7 (499)
+          189-37-37, +7 (495) 786-22-33,
+          <span class="border-bottom">office@senegskaya.ru</span></span
+        >
       </div>
     </div>
 
     <footer>
       <div class="footer__logo-and-copyright">
-        <h2 class="footer__logo block uppercase">
-          Starbar Craft
-        </h2>
+        <h2 class="footer__logo block uppercase">Starbar Craft</h2>
         <span class="footer__copyright">
           2017 © Bobimex - добыча и разлив природной минеральной воды
         </span>
@@ -225,11 +262,15 @@
           <a href="#new-items" class="uppercase">Новинки</a>
         </div>
         <div class="footer__contacts">
-          <img src="./img/tg.png" alt="Telegram">
-          <img src="./img/twitter.png" alt="Twitter">
-          <img src="./img/facebook.png" alt="Facebook">
+          <img src="./img/tg.png" alt="Telegram" />
+          <img src="./img/twitter.png" alt="Twitter" />
+          <img src="./img/facebook.png" alt="Facebook" />
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
